@@ -1,0 +1,62 @@
+/* ===============
+	GRID
+=============== */
+
+$columns: 12;
+
+$wide:    1200px; // 1300px
+$desktop: 992px;  // 980px
+$tablet:  720px;  // 740px
+$mobile:  576px;  // 320px
+
+$mq: ( $wide:$columns, $desktop:$columns, $tablet:$columns, $mobile:$columns );
+
+$row-offset: $base-spacing-unit;
+
+.o-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: ($row-offset * -1);
+  margin-right: ($row-offset * -1);
+}
+
+.o-row__col {
+  margin-left: $row-offset;
+  margin-right: $row-offset;
+}
+
+// Grig system
+
+@for $i from 1 through $columns {
+  $equ: (100% / $columns * $i) ;
+  .o-row__col--#{$i} {
+    width: $equ;
+  }
+}
+
+@each $key, $val in $mq {
+	@media all and (max-width: $key) {
+
+		@for $i from 1 through $columns {
+  		$equ: (100% / $columns * $i) ;
+  		@if $key == $wide {
+  			 .o-row__col--#{$i}-lg {
+    				width: $equ;
+  			}
+  		} @else if $key == $desktop {
+  			.o-row__col--#{$i}-md {
+    				width: $equ;
+  			}
+  		} @else if $key == $tablet {
+  			.o-row__col--#{$i}-sm {
+    				width: $equ;
+  			}
+  		} @else {
+  			.o-row__col--#{$i}-xs {
+    				width: $equ;
+  			}
+  		}
+		}
+
+	}
+}

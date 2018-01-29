@@ -1,0 +1,33 @@
+/* ===============
+	COLORS
+=============== */
+
+$primary-color: #0366ee;
+$secondary-color: #fcb42a;
+$accent-color: #cdcdcd;
+$alternate-color: #404040;
+$highlight: #ffeea8;
+$error: #d33c40;
+$white-color: #ffffff;
+
+
+// Background Colors
+$background: $white-color;
+$alternate-background: #fafafa;
+
+
+// Body Color
+$text-color: #404040;
+
+
+// Headings
+$heading-font-color: #404040;
+
+
+// Links
+$link-color: $primary-color;
+$link-hover-color: darken($link-color, 15%);
+
+
+// Border
+$border-color: #f0f0f0;

@@ -1,0 +1,14 @@
+/* ===============
+	LINKS
+=============== */
+
+a {
+    text-decoration: none;
+    color: $color-link;
+    transition: $global-transition;
+
+    &:hover {
+        color: $color-link-hover;
+    }
+
+}

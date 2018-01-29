@@ -1,0 +1,97 @@
+/* ===============
+	HELPERS
+=============== */
+
+// Text Alignment
+.u-text-left {
+	text-align: left;
+}
+
+.u-text-right {
+	text-align: right;
+}
+
+.u-text-center {
+	text-align: center;
+}
+
+.u-text-justify {
+	text-align: justify;
+}
+
+
+// Display
+.u-block {
+	display: block;
+}
+
+.u-inline-block {
+	display: inline-block;
+}
+
+.u-inline {
+	display: inline;
+}
+
+
+// Vertical Center
+.u-vertical-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+// Responsive Images
+.u-responsive-image {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+
+// Display State
+.u-show {
+	display: block !important;
+}
+
+.u-hide {
+	display: none !important;
+}
+
+.u-invisible {
+	visibility: hidden;
+}
+
+
+// Floats
+.u-float-left {
+	float: left;
+}
+
+.u-float-right {
+	float: right;
+}
+
+
+// Padding
+.u-no-padding {
+	padding: 0;
+}
+
+
+// Margins
+.u-no-margin {
+	margin: 0;
+}
+
+
+// Lists Reset
+.u-lists-reset {
+	@include lists-reset();
+}
+
+// Clearfix
+.u-clearfix {
+  @include clearfix();
+}
