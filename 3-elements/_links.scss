@@ -4,11 +4,11 @@
 
 a {
     text-decoration: none;
-    color: $color-link;
+    color: $link-color;
     transition: $global-transition;
 
     &:hover {
-        color: $color-link-hover;
+        color: $link-color-hover;
     }
 
 }
